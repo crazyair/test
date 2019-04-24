@@ -1,16 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
-function useFriendStatus(friendID) {
-  const [isOnline, setIsOnline] = useState(null);
-  useEffect(() => {
-    function handleStatusChange(status) {
-      setIsOnline(status.isOnline);
-    }
-  });
-  return isOnline;
-}
-
 function App() {
   const [count, setCount] = useState(0);
   return (
